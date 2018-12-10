@@ -23,8 +23,8 @@
         content: attr(data-second-text)
         z-index: -1
         opacity: .8
-        +text(darken($darkColor, 20%), rem(440px), 900, 1)
-        +absolute-offset(50%, auto, auto, 50%, -40%, -50%)
+        +text(darken($darkColor, 4%), rem(440px), 900, 1)
+        +absolute-offset(50%, auto, auto, 50%, -30%, -50%)
         +lg-block()
             +text(darken($darkColor, 20%), rem(360px), 900, 1)
         +sm-block()
@@ -35,7 +35,7 @@
     font-weight: 100
                 
 .b-plans__main
-    background-color: rgba(0,0,0,.2)
+    background-color: rgba($darkColor, .6)
 .b-plans__inner
     +wrapper()
 .b-plans__items
@@ -46,8 +46,9 @@
     +col()
     +size(4)
     +size-lg(12)
-    margin-top: 10px
-    margin-bottom: 10px
+    +lg-block()
+        margin-top: 10px
+        margin-bottom: 10px
     +sm-block()
         margin-top: 5px
         margin-bottom: 5px
