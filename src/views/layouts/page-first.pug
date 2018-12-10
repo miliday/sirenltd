@@ -1,0 +1,23 @@
+//- ----------------------------------------------------------------------
+//- Starter markup template miliday - "Made with love, especially for you"
+//- ----------------------------------------------------------------------
+//- nickname: "Michael Holiday"
+//- email: "miliday.developer@gmail.com"
+//- ----------------------------------------------------------------------
+
+
+include ../addons/variables.pug
+include ../addons/mixins.pug
+
+include ../components/*.pug
+
+include ./head-first.pug
+
+
+doctype html
+html
+    +headFirst()
+        block head
+
+    body
+        block body
