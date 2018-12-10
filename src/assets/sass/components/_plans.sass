@@ -1,7 +1,7 @@
 .b-plans
 .b-plans__header
     +wrapper()
-    margin-bottom: 90px
+    margin-bottom: 120px
     position: relative
     padding-bottom: 30px
     &:after
@@ -22,9 +22,9 @@
     &:before
         content: attr(data-second-text)
         z-index: -1
-        opacity: .8
+        opacity: .4
         +text(darken($darkColor, 4%), rem(440px), 900, 1)
-        +absolute-offset(50%, auto, auto, 50%, -30%, -50%)
+        +absolute-offset(50%, auto, auto, 50%, -25%, -50%)
         +lg-block()
             +text(darken($darkColor, 20%), rem(360px), 900, 1)
         +sm-block()
